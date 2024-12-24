@@ -1,0 +1,41 @@
+<template>
+    <div id="AuthPage" class="w-full h-[100vh] bg-white">
+        <div class="w-full flex items-center justify-center py-5 bg-blue-900">
+            <NuxtLink to="/" class="min-w-[170px]">
+                <img width="170" src="/flexdesign-logo.png">
+            </NuxtLink>
+        </div>
+
+
+        <div class="max-w-[400px] mx-auto px-2">
+            <div class="text-center my-6">Entrar / Registrar</div>
+
+             <button 
+                @click="login('google')"
+                class="
+                    flex 
+                    items-center 
+                    justify-center 
+                    gap-3
+                    p-1.5
+                    w-full 
+                    border 
+                    hover:bg-gray-100
+                    rounded-full
+                    text-lg
+                    font-semibold
+                "
+            >
+                <img class="w-full max-w-[30px]" src="/google-logo.png">
+                <div>Google</div>
+            </button>
+
+
+            
+
+        </div>
+    </div>
+</template>
+
+<script setup>
+</script>
